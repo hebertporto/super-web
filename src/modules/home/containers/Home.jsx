@@ -13,8 +13,8 @@ class Home extends Component {
   render () {
     const { logged } = this.props
     return (
-      <div>
-        <h1>HOME</h1><br /><br />
+      <div className='home'>
+        <span>Home</span>
         <If test={!logged}>
           <Link to={LOGIN}>LOGIN</Link><br />
         </If>
