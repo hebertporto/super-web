@@ -6,9 +6,12 @@
 }
 
 .nav-main {
-  padding-left: 8.33333333% !important;
-  padding-right: 8.33333333% !important;
-  /* color: rgba(0, 0, 0, 0.87);
+  padding-left: 16.33333333% !important;
+  padding-right: 16.33333333% !important;
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(112, 171, 206) !important;
+  font-family: 'Roboto', sans-serif !important;
+  /*
   background-color: rgb(0, 188, 212);
   transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
   box-sizing: border-box;
@@ -21,9 +24,7 @@
   position: relative;
   z-index: 1100;
   width: 100%;
-  display: flex;
-  padding-left: 24px;
-  padding-right: 24px; */
+  display: flex; */
 }
 
 @media only screen and (max-device-width: 480px) {

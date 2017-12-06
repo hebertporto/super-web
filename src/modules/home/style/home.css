@@ -1,6 +1,7 @@
 
 .home-login-box {
   margin-top: 80px;
+  background-color: tomato;
 }
 
 @media only screen and (max-device-width: 480px) {

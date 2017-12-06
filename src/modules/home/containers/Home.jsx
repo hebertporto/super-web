@@ -23,11 +23,11 @@ class Home extends Component {
     return (
       <SectionCentered>
         <Row>
-          <Col mdOffset={4} xs={12} md={4} className='home-login-box'>
+          <Col mdOffset={5} xs={12} md={4} className='home-login-box'>
             <Card>
               <CardHeader
                 title='Login'
-                titleStyle={{textAlign: 'center'}}
+                titleStyle={{ textAlign: 'center' }}
               />
               <CardTitle title='Card title' subtitle='Card subtitle' />
               <CardText>

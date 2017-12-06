@@ -5,7 +5,7 @@ const SectionCentered = (props) => {
   return (
     <Grid fluid>
       <Row>
-        <Col mdOffset={1} xs={12} md={10}>
+        <Col mdOffset={1} xs={12} md={8}>
           {props.children}
         </Col>
       </Row>
