@@ -6,11 +6,12 @@
 }
 
 .nav-main {
-  padding-left: 16.33333333% !important;
-  padding-right: 16.33333333% !important;
-  color: rgb(255, 255, 255) !important;
   background-color: rgb(112, 171, 206) !important;
+  box-shadow: none !important;
+  color: rgb(255, 255, 255) !important;
   font-family: 'Roboto', sans-serif !important;
+  padding-left: 8.33333333% !important;
+  padding-right: 8.33333333% !important;
   /*
   background-color: rgb(0, 188, 212);
   transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;

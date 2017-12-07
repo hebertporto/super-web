@@ -1,13 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-
 import { AppBar } from 'material-ui'
 
 import SectionFullWidth from './../grid/SectionFullWidth'
-
 import LoggedMenu from './header/LoggedMenu'
-import DefaultMenu from './header/DefaultMenu'
 
 import {
   signOut
@@ -24,7 +21,7 @@ class Header extends Component {
           title='Super Web'
           className='nav-main'
           showMenuIconButton={false}
-          iconElementRight={logged ? <LoggedMenu /> : <DefaultMenu />}
+          iconElementRight={logged ? <LoggedMenu /> : null}
         />
       </SectionFullWidth>
     )
