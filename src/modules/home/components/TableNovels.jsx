@@ -34,8 +34,10 @@ class TableNovels extends Component {
             <TableRowColumn>Tales of Demons and Gods</TableRowColumn>
             <TableRowColumn> 370 - 6/12/2017</TableRowColumn>
             <TableRowColumn>
-              <RaisedButton label="Default" style={styleButton} />
-              <RaisedButton label="Primary" primary style={styleButton} />
+              <RaisedButton
+                label='Default'
+                style={styleButton} />
+              <RaisedButton label='Primary' primary style={styleButton} />
             </TableRowColumn>
           </TableRow>
         </TableBody>
