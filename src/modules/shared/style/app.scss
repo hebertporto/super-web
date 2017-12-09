@@ -1,11 +1,17 @@
+$primary-color: rgb(112, 171, 206);
+$secondary-color: rgb(217, 217, 217);
+
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
 }
 
 .container-fluid {
-   padding: 0 !important;
+   padding: 0;
 }
 
 .home {
   background-color: pink;
+}
+.col-xs-12 {
+  padding-right: 0;
 }

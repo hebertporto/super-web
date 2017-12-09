@@ -1,12 +1,28 @@
+@import './app.scss';
+
 .header {
-  background-color: grey;
+  background-color: rgb(190, 190, 190);
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
+.header-menu {
+  @media only screen and (max-device-width: 480px) {
+    display: none;
+  }
+}
+
+.header-menu-mobile {
+  display: none;
+  color: white !important;
+  @media only screen and (max-device-width: 480px) {
+    display: inline;
+  }
+}
+
 .nav-main {
-  background-color: rgb(112, 171, 206) !important;
+  background-color : $primary-color !important;
   box-shadow: none !important;
   color: rgb(255, 255, 255) !important;
   font-family: 'Roboto', sans-serif !important;
@@ -26,11 +42,10 @@
   z-index: 1100;
   width: 100%;
   display: flex; */
-}
 
-@media only screen and (max-device-width: 480px) {
-  .nav-main {
+  @media only screen and (max-device-width: 480px) {
     padding-left: 15px !important;
     padding-right: 15px !important;
   }
 }
+

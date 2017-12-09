@@ -21,7 +21,7 @@ class Header extends Component {
           title='Super Web'
           className='nav-main'
           showMenuIconButton={false}
-          iconElementRight={logged ? <LoggedMenu /> : null}
+          iconElementRight={logged ? <LoggedMenu /> : <LoggedMenu />}
         />
       </SectionFullWidth>
     )
