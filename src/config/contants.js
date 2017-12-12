@@ -1,3 +1,3 @@
-export const API_URL = 'https://powerful-fjord-56533.herokuapp.com/'
+export const API_URL = process.env.REACT_APP_BASE_URL
 
 export const GET_NOVELS = ''
