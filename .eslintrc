@@ -13,5 +13,8 @@
     "react/jsx-uses-vars": "error"
   },
   "extends": ["standard"],
-  "plugins": [ "flowtype", "react" ]
+  "plugins": [ "flowtype", "react" ],
+  "globals": {
+    "FileReader": true
+  }
 }

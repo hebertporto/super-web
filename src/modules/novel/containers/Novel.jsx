@@ -1,36 +1,27 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Row, Col } from 'react-flexbox-grid'
 
-import TableNovels from './../components/TableNovels'
-import MenuLeft from './../components/MenuLeft'
 import SectionCentered from './../../shared/components/grid/SectionCentered'
+import FormNovel from './../components/FormNovel'
 
 import {
   signOut
 } from './../../../redux/actions/auth/actions'
 
-import './../style/home.css'
+import './../style/novel.css'
 
-class Home extends Component {
+class Novel extends Component {
   render () {
     return (
       <SectionCentered>
-        <Row>
-          <Col xs={12} md={8}>
-            <TableNovels />
-          </Col>
-          <Col xs={12} md={4}>
-            <MenuLeft />
-          </Col>
-        </Row>
+        <FormNovel />
       </SectionCentered>
     )
   }
 }
 
-Home.propTypes = {
+Novel.propTypes = {
   logged: PropTypes.bool
 }
 
@@ -46,4 +37,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Novel)

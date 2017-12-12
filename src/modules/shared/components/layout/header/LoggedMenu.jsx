@@ -12,7 +12,7 @@ const LoggedMenu = (props) => {
     <div>
       <div className='header-menu'>
         <FlatButton
-          label='Novels'
+          label='Home'
           style={buttonMenu}
           hoverColor='rgb(49, 131, 179)'
           onClick={() => history.push(HOME)}
@@ -46,7 +46,7 @@ const LoggedMenu = (props) => {
           anchorOrigin={{ horizontal: 'right', vertical: 'top' }}
         >
           <MenuItem
-            primaryText='Novels'
+            primaryText='Home'
             onClick={() => history.push(HOME)}
           />
           <MenuItem
