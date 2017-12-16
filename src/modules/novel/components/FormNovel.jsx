@@ -4,7 +4,6 @@ import { RaisedButton } from 'material-ui'
 import { ValidatorForm } from 'react-form-validator-core'
 import { TextValidator } from 'react-material-ui-form-validator'
 import { teal300 } from 'material-ui/styles/colors'
-import ActionHome from 'material-ui/svg-icons/action/home'
 
 import SectionCentered from './../../shared/components/grid/SectionCentered'
 
