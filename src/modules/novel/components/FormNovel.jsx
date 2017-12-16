@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import { RaisedButton } from 'material-ui'
 import { ValidatorForm } from 'react-form-validator-core'
 import { TextValidator } from 'react-material-ui-form-validator'
+import { teal300 } from 'material-ui/styles/colors'
+import ActionHome from 'material-ui/svg-icons/action/home'
 
 import SectionCentered from './../../shared/components/grid/SectionCentered'
-import Image from './../../shared/components/helpers/ImageInput'
 
 import './../style/FormNovel.css'
 
@@ -42,19 +43,16 @@ class FormNovel extends Component {
         imagePreviewUrl: reader.result
       })
     }
-
+    console.log('opsss')
     reader.readAsDataURL(file)
   }
 
   render () {
-    const { imagePreviewUrl, name, description, author, translationTeam } = this.state
+    const { name, description, author, translationTeam } = this.state
 
-    let $imagePreview = null
-    if (imagePreviewUrl) {
-      $imagePreview = (<Image src={imagePreviewUrl} className='team-page-img' circle />)
-    }
     return (
       <SectionCentered>
+        <h1>Cadastrar Novel</h1>
         <ValidatorForm
           ref='form'
           className='fn-box'
@@ -94,15 +92,15 @@ class FormNovel extends Component {
             validators={['required']}
             errorMessages={['Esse campo é obrigatório']}
           />
-          <div className='image'>
-            {$imagePreview}
-          </div>
-          <div>
-            <span>Upload</span>
-            <input type='file' onChange={e => this.handleImageChange(e)} />
-          </div>
-          <RaisedButton type='submit' label="Criar" style={{ margin: 12 }} />
         </ValidatorForm>
+        <RaisedButton
+          type='submit'
+          backgroundColor={teal300}
+          label="Criar"
+          fullWidth={false}
+          style={{ marginTop: 20 }}
+          labelColor='#ffffff'
+        />
       </SectionCentered>
     )
   }

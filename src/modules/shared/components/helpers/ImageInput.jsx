@@ -2,7 +2,6 @@
 /*  eslint no-param-reassign: 0 */
 
 import React from 'react'
-import PropTypes from 'prop-types'
 
 const readFileAsDataURL = file =>
   new Promise((resolve) => {
@@ -78,7 +77,7 @@ class ImageInput extends React.Component {
     const { value } = this.state
 
     const style = {
-      position: 'relative',
+      position: 'relative'
     }
 
     if (value) {
@@ -101,7 +100,7 @@ class ImageInput extends React.Component {
             left: 0,
             width: '100%',
             height: '100%',
-            opacity: 0,
+            opacity: 0
           }}
         />
       </div>

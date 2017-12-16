@@ -15,6 +15,7 @@
   "extends": ["standard"],
   "plugins": [ "flowtype", "react" ],
   "globals": {
-    "FileReader": true
+    "FileReader": true,
+    "Image": true
   }
 }
