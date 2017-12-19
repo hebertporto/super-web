@@ -15,6 +15,7 @@ const MenuLeft = props => {
         fullWidth
         onClick={() => history.push(NOVEL)}
       />
+      <div className="fixed-bottom">...</div>
     </div>
   )
 }

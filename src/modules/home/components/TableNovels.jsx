@@ -17,8 +17,8 @@ const styleButton = {
 }
 
 const novels = [
-  { id: 1, name: 'Tales of Demons and Gods', lastChapter: '370 - 6/12/2017' },
-  { id: 3, name: 'A Will Eternal', lastChapter: '148 - 3/12/2017' }
+  { id: 1, name: 'Tales of Demons and Gods', chapterNum: '370', lastChapterDate: '6/12/2017' },
+  { id: 3, name: 'A Will Eternal', chapterNum: '148', lastChapterDate: '3/12/2017' }
 ]
 
 class TableNovels extends Component {
@@ -58,7 +58,8 @@ class TableNovels extends Component {
           >
             <TableRow>
               <TableHeaderColumn>Novel</TableHeaderColumn>
-              <TableHeaderColumn>Último Capitulo</TableHeaderColumn>
+              <TableHeaderColumn>Capítulo</TableHeaderColumn>
+              <TableHeaderColumn>Data</TableHeaderColumn>
               <TableHeaderColumn>Ações</TableHeaderColumn>
             </TableRow>
           </TableHeader>
@@ -69,7 +70,8 @@ class TableNovels extends Component {
               return (
                 <TableRow key={novel.id}>
                   <TableRowColumn>{novel.name}</TableRowColumn>
-                  <TableRowColumn>{novel.lastChapter}</TableRowColumn>
+                  <TableRowColumn>{novel.chapterNum}</TableRowColumn>
+                  <TableRowColumn>{novel.lastChapterDate}</TableRowColumn>
                   <TableRowColumn>
                     <RaisedButton
                       backgroundColor='#00897B'
