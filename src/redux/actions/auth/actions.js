@@ -1,8 +1,11 @@
+import { toastr } from 'react-redux-toastr'
 import {
   AUTH_LOGGED_STATUS,
-  AUTH_USER_CREDENTIALS,
   AUTH_RESET_PASSWORD
 } from './types'
+import {
+  USER_SET_PROFILE
+} from './../user/types'
 
 import { firebase } from './../../../config/firebase'
 
@@ -28,9 +31,10 @@ export function signinSignup (email, password) {
         }
       })
       .then((user) => {
+        console.log('USER')
         if (user && user.email) {
           dispatch([
-            createAction(AUTH_USER_CREDENTIALS, user),
+            createAction(USER_SET_PROFILE, user),
             createAction(AUTH_LOGGED_STATUS, true)
           ])
         }
@@ -42,6 +46,8 @@ export function signinSignup (email, password) {
 }
 
 export function signOut () {
+  console.log('=:)')
+  toastr.success('The title', 'The message')
   return (dispatch) => {
     firebase.auth().signOut()
       .then((response) => {

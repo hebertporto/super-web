@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { Row, Col } from 'react-flexbox-grid'
 
 import TableNovels from './../components/TableNovels'
-import MenuLeft from './../components/MenuLeft'
+import SideMenu from './../components/SideMenu'
 import SectionCentered from './../../shared/components/grid/SectionCentered'
 
 import {
@@ -18,11 +18,11 @@ class Home extends Component {
     return (
       <SectionCentered>
         <Row>
+          <Col xs={12} md={4}>
+            <SideMenu />
+          </Col>
           <Col xs={12} md={8}>
             <TableNovels />
-          </Col>
-          <Col xs={12} md={4}>
-            <MenuLeft />
           </Col>
         </Row>
       </SectionCentered>
