@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Col } from 'react-flexbox-grid'
 import {
   Table,
   TableBody,
@@ -42,11 +43,11 @@ class TableNovels extends Component {
   render () {
     const { searched, searchedNovels } = this.state
     return (
-      <div className='home-box-left'>
+      <Col xs={12} md={8} className='home-box-left'>
         <TextField
           hintText='Pesquisar'
           fullWidth
-          hintStyle={{ color: 'orange' }}
+          hintStyle={{ color: 'grey' }}
           name='searched'
           value={searched}
           onChange={this.handleChange}
@@ -89,7 +90,7 @@ class TableNovels extends Component {
             })}
           </TableBody>
         </Table>
-      </div>
+      </Col>
     )
   }
 }

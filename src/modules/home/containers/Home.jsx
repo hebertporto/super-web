@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Row, Col } from 'react-flexbox-grid'
 
+import SectionCentered from './../../shared/components/grid/SectionCentered'
 import TableNovels from './../components/TableNovels'
 import SideMenu from './../components/SideMenu'
-import SectionCentered from './../../shared/components/grid/SectionCentered'
 
 import {
   signOut
@@ -17,14 +16,8 @@ class Home extends Component {
   render () {
     return (
       <SectionCentered>
-        <Row>
-          <Col xs={12} md={4}>
-            <SideMenu />
-          </Col>
-          <Col xs={12} md={8}>
-            <TableNovels />
-          </Col>
-        </Row>
+        <SideMenu />
+        <TableNovels />
       </SectionCentered>
     )
   }

@@ -2,6 +2,8 @@ import React from 'react'
 import {
   Paper, Menu, MenuItem, Divider
 } from 'material-ui'
+import { Col } from 'react-flexbox-grid'
+
 import CreateNewFolder from 'material-ui/svg-icons/file/create-new-folder'
 
 import history from './../../../config/utils/historyRouter'
@@ -16,7 +18,7 @@ const style = {
 
 const SideMenu = props => {
   return (
-    <div className='side-menu-box'>
+    <Col xs={12} md={4} className='side-menu-box'>
       <Paper style={style}>
         <Menu desktop>
           <MenuItem
@@ -33,7 +35,7 @@ const SideMenu = props => {
           <MenuItem primaryText="Sign out" disabled />
         </Menu>
       </Paper>
-    </div>
+    </Col>
   )
 }
 
